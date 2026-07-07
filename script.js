@@ -58,6 +58,32 @@ updateClock();
 
 setInterval(updateClock, 1000);
 
+document.querySelectorAll(".window").forEach(makeDraggable);
+
+function makeDraggable(window) {
+    const titleBar = window.querySelector(".title-bar");
+
+    let offsetX = 0;
+    let offsetY = 0;
+    let isDragging = false;
+
+    titleBar.addEventListener("mousedown", function (e) {
+        isDragging = true;
+        offsetX = e.clientX - window.offsetLeft;
+        offsetY = e.clientY - window.offsetTop;
+    });
+
+    document.addEventListener("mousemove", function (e) {
+        if (!isDragging) return;
+
+        window.style.left = (e.clientX - offsetX) + "px";
+        window.style.top = (e.clientY - offsetY) + "px";
+    });
+
+    document.addEventListener("mouseup", function () {
+        isDragging = false;
+    });
+}
 
 
 

@@ -250,6 +250,10 @@ nav a:hover {
 
     transition: .3s;
 
+    top: 250px;
+
+    left: 60px;
+
 }
 
 #quote-display {
@@ -312,6 +316,10 @@ nav a:hover {
 
     transition: .3s;
 
+    top: 600px;
+
+    left: 250px;
+
 }
 
 .creator-card strong {
@@ -359,5 +367,27 @@ footer {
         padding: 25px;
 
     }
+
+}
+
+.window {
+    position: absolute;
+    cursor: move;
+
+}
+
+.title-bar {
+    background: #5b5bff;
+    color: white;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 12px 12px 0 0;
+    cursor: move;
+
+}
+
+.about-card {
+    top: 250px;
+    left: 500px;
 
 }
