@@ -58,7 +58,7 @@ updateClock();
 
 setInterval(updateClock, 1000);
 
-const windows = document.querySelectorAll(".notes-window, status-window");
+const windows = document.querySelectorAll(".notes-window, .status-window");
 
 windows.forEach(win => {
 
