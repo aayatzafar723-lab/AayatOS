@@ -250,10 +250,6 @@ nav a:hover {
 
     transition: .3s;
 
-    top: 350px;
-
-    left: 650px;
-
 }
 
 #quote-display {
@@ -316,10 +312,6 @@ nav a:hover {
 
     transition: .3s;
 
-    top: 800px;
-
-    left: 350px;
-
 }
 
 .creator-card strong {
@@ -371,9 +363,8 @@ footer {
 }
 
 .window {
-    position: absolute;
+    position: relative;
     cursor: move;
-    z-index: 1;
 
 }
 
@@ -384,11 +375,5 @@ footer {
     font-weight: bold;
     border-radius: 12px 12px 0 0;
     cursor: move;
-
-}
-
-.about-card {
-    top: 350px;
-    left: 80px;
 
 }
