@@ -363,17 +363,34 @@ footer {
 }
 
 .window {
-    position: relative;
-    cursor: move;
-
+    position: absolute;
+    width: 240px;
+    background: rgba(255, 255, 255, .92);
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+    overflow: hidden;
+    z-index: 10;
 }
 
 .title-bar {
-    background: #5b5bff;
+    background: #4f46e5;
     color: white;
-    padding: 8px 12px;
-    font-weight: bold;
-    border-radius: 12px 12px 0 0;
+    padding: 10px;
     cursor: move;
+    font-weight: bold;
+}
 
+.window p {
+    padding: 15px;
+    line-height: 1.6;
+}
+
+.notes-window {
+    top: 140px;
+    right: 40px;
+}
+
+.status-window {
+    top: 420px;
+    right: 40px;
 }

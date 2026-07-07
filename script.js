@@ -58,49 +58,43 @@ updateClock();
 
 setInterval(updateClock, 1000);
 
-document.querySelectorAll(".window").forEach(makeDraggable);
+const windows = document.querySelectorAll(".window");
 
-function makeDraggable(window) {
-    const titleBar = window.querySelector(".title-bar");
+windows.forEach(win => {
 
-    let offsetX = 0;
-    let offsetY = 0;
-    let isDragging = false;
+    const bar = win.querySelector(".title-bar");
 
-    titleBar.addEventListener("mousedown", function (e) {
-        isDragging = true;
-        offsetX = e.clientX - window.offsetLeft;
-        offsetY = e.clientY - window.offsetTop;
-    });
+    let dragging = false;
+    let x = 0;
+    let y = 0;
 
-    document.addEventListener("mousemove", function (e) {
-        if (!isDragging) return;
+    bar.onmousedown = function (e) {
 
-        window.style.left = (e.clientX - offsetX) + "px";
-        window.style.top = (e.clientY - offsetY) + "px";
-    });
+        dragging = true;
 
-    document.addEventListener("mouseup", function () {
-        isDragging = false;
-    });
-}
+        x = e.clientX - win.offsetLeft;
+        y = e.clientY - win.offsetTop;
 
+        document.onmousemove = function (e) {
 
+            if (!dragging) return;
 
+            win.style.left = (e.clientX - x) + "px";
+            win.style.top = (e.clientY - y) + "px";
+        };
 
+        document.onmouseup = function () {
 
+            dragging = false;
 
+            document.onmousemove = null;
+            document.onmouseup = null;
 
+        };
 
+    };
 
-
-
-
-
-
-
-
-
+});
 
 
 
