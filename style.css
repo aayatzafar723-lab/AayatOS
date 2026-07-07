@@ -250,9 +250,9 @@ nav a:hover {
 
     transition: .3s;
 
-    top: 300px;
+    top: 350px;
 
-    left: 100px;
+    left: 650px;
 
 }
 
@@ -374,7 +374,6 @@ footer {
     position: absolute;
     cursor: move;
     z-index: 1;
-    width: fit-content;
 
 }
 
@@ -389,7 +388,7 @@ footer {
 }
 
 .about-card {
-    top: 300px;
-    left: 650px;
+    top: 350px;
+    left: 80px;
 
 }
