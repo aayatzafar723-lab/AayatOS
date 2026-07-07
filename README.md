@@ -15,6 +15,7 @@ It welcoms visitors with a modern homepage and allows them to explore different 
 -"Enter Desktop" button that smoothly scrolls to the Quote Generator
 -About the Project section
 -About the Creator section
+-Draggable windows of notes and status
 -Soft titLe glow and subtle interface animations
 -Hover animations for button and cards
 -Smooth scrolling
