@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background: linear-gradient(135deg, #fdf6ff, #f8f5ff, #fffafd);
+    color: #4a4a68;
+    min-height: 100vh;
+}
+
+
+
+.navbar {
+
+    width: 90%;
+
+    margin: 20px auto;
+
+    padding: 18px 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: rgba(255, 255, 255, .65);
+
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+
+}
+
+.logo {
+
+    font-size: 1.6rem;
+
+    font-weight: 700;
+
+    color: #6d5efc;
+}
+
+.logo span {
+
+    margin-left: 8px;
+}
+
+nav {
+
+    display: flex;
+
+    gap: 30px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+
+}
+
+nav a {
+
+    text-decoration: none;
+
+    color: #555;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+nav a:hover {
+
+    color: #8b7dff;
+
+}
+
+.system {
+
+    display: flex;
+
+    gap: 18px;
+
+    font-size: .95rem;
+
+    color: #666;
+
+}
+
+.hero {
+
+    width: 85%;
+
+    margin: 80px auto;
+
+    text-align: center;
+
+}
+
+.hero h1 {
+
+    font-size: 4rem;
+
+    color: #6d5efc;
+
+    margin-left: 20px;
+
+    text-shadow: 0 4px 15px rgba(93, 90, 136, .25);
+
+}
+
+.hero p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 1.15rem;
+
+    line-height: 1.8;
+
+    color: #666;
+
+}
+
+.enter-btn {
+
+    margin-top: 40px;
+
+    padding: 15px 38px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    background: #8b7dff;
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+}
+
+.enter-btn:hover {
+
+    background: #6d5efc;
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 20px rgba(109, 94, 252, .25);
+
+    transform: scale(1.05);
+
+}
+
+
+.info-section {
+
+    width: 90%;
+
+    margin: 60px auto;
+
+}
+
+.top-cards {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+
+}
+
+.creator-card {
+
+    width: 100%;
+
+}
+
+.card {
+
+    background: rgba(255, 255, 255, .75);
+
+    backdrop-filter: blur(18px);
+
+    border-radius: 24px;
+
+    padding: 35px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+    transition: 0.3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 35px rgba(124, 111, 240, .15);
+
+}
+
+.card h2 {
+
+    color: #6d5efc;
+
+    margin-bottom: 18px;
+
+    font-size: 1.6rem;
+
+    font-weight: 600;
+
+}
+
+.card p {
+
+    line-height: 1.8;
+
+    color: #666;
+
+    font-size: 1rem;
+
+}
+
+.quote-card {
+
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+
+    transition: .3s;
+
+}
+
+#quote-display {
+
+    font-size: 1.2rem;
+
+    font-style: italic;
+
+    color: #444;
+
+    margin: 25px 0;
+
+    line-height: 1.7;
+
+}
+
+#author-display {
+
+    color: #8b7dff;
+
+    margin-bottom: 25px;
+
+    font-weight: 600;
+
+}
+
+.quote-card button {
+
+    background: #8b7dff;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 40px;
+
+    padding: 12px 28px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+    transition: 0.3s;
+
+}
+
+.quote-card button:hover {
+
+    background: #6d5efc;
+
+    transform: scale(1.05);
+
+}
+
+.creator-card {
+
+    text-align: left;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+
+    transition: .3s;
+
+}
+
+.creator-card strong {
+
+    color: #6d5efc;
+
+}
+
+footer {
+
+    margin-top: 60px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    color: #888;
+
+    font-size: .9rem;
+
+}
+
+@media(max-width:600px) {
+
+    .hero {
+
+        margin-top: 60px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 2.3rem;
+
+    }
+
+    .hero p {
+
+        font-size: 1rem;
+
+    }
+
+    .card {
+
+        padding: 25px;
+
+    }
+
+}
